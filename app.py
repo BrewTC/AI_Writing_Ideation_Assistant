@@ -40,7 +40,7 @@ st.markdown(
 
 # --- 定義中心化區塊 ---
 st.markdown('<div class="main-content">', unsafe_allow_html=True)  # 標記開始置中
-st.title("💡AI 寫作發想助理")
+st.title("AI 寫作發想助理")
 # 響應式封面圖片
 def get_base64_image(image_path):
     with open(image_path, "rb") as f:
