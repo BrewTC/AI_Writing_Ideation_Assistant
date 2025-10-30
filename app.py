@@ -262,12 +262,12 @@ def call_generative_ai(prompt_text):
         return None
 
     # 初始化 OpenAI 客戶端
-    # client = OpenAI(
-    #     api_key=api_key,  # 使用你的 Gemini API Key
-    #     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"  # Gemini API Base URL
-    
+    client = OpenAI(
         api_key=api_key,
         base_url=api_base_url  # 從 st.secrets 讀取的 Base URL
+		
+    #     api_key=api_key,  # 使用你的 Gemini API Key
+    #     base_url=""  # Gemini API Base URL
     )
 
     try:
