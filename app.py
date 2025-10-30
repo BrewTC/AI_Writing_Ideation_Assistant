@@ -4,11 +4,11 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import base64
 
-# # --- 初始化環境 ---
+# --- 初始化環境 ---
 # load_dotenv()
 # api_key = os.getenv("API_KEY")  # 確認在 .env 文件中正確地定義 API 金鑰
 
-從 Streamlit Secrets 讀取安全的 API Key
+# 從 Streamlit Secrets 讀取安全的 API Key
 api_key = st.secrets["API_KEY"]
 api_base_url = st.secrets["API_BASE_URL"]
 
